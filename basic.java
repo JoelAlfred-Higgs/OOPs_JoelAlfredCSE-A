@@ -9,7 +9,7 @@ class basic{
             System.out.println("Child");
         else
             System.out.println("Adult");
-        
+         sc.close();
           }
 
     }
