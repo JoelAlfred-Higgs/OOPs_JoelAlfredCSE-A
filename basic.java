@@ -6,9 +6,9 @@ class basic{
         
         int age = sc.nextInt();
         if(age<18)
-            System.out.println("CHild");
+            System.out.println("Child");
         else
-            System.out.println("aDult");
+            System.out.println("Adult");
         
           }
 
