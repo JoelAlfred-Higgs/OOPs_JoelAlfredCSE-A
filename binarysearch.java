@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class binarysearch {
+public class BinarySearch {
     public static void main(){
     int low,high,mid,n,arr[] = new int[5],i;
     boolean found = false;
