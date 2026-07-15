@@ -14,7 +14,7 @@ public class Vowels {
             }
         }
         if(flag == 0){
-        System.err.print("Its not a vowel");
+        System.err.print("Its a consonant");
     }
 
         obj.close();
