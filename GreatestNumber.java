@@ -8,11 +8,11 @@ public class GreatestNumber{
         b = sc.nextInt();
         c = sc.nextInt();
         if(a>b&&a>c)
-            System.err.println(a+" is the greatest number");
+            System.out.println(a+" is the greatest number");
         else if(b>c)
-            System.err.println(b+" is the greatest number");
+            System.out.println(b+" is the greatest number");
         else
-            System.err.println(c+" is the greatest number");
+            System.out.println(c+" is the greatest number");
         sc.close();
     }
 }
