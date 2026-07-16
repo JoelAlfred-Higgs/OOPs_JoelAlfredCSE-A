@@ -28,7 +28,7 @@ public class BinarySearch {
       if(!found )
       System.err.println("Element is not present");
 
-      sc.close();
+    sc.close();
     }
 
 
