@@ -1,6 +1,6 @@
 import java.util.*;
 public class Fibonacci {
-    void main(){
+    public static void main(String[] args) {
     int i,n,a=0,b=1,c;
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter a number:");
