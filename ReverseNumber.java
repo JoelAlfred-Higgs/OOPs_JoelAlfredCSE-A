@@ -8,7 +8,7 @@ public class ReverseNumber {
         while(n!=0){
             dig = n%10;
             rev = rev*10 + dig;
-            n = n/10;
+            n = n/10; 
         }
         System.out.print("Reverse: "+rev);
         obj.close();
