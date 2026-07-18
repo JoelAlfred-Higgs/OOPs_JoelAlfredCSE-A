@@ -7,7 +7,7 @@ public class LeapYear {
        year = obj.nextInt();
        if((year%4==0&&year%100!=0)||(year%400==0))
         System.out.print("Its a leapyear");
-       else
+       else   
         System.out.print("Its not a leap year");
        obj.close();
     }
