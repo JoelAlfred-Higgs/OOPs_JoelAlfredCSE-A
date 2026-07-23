@@ -13,7 +13,7 @@ class SelectionSort{
             if(arr[j]<arr[minindex])
                 minindex = j;
         }
-        // swap i and minindex elements
+        // swap i and minindex elements                                                                                                                                             
         temp = arr[i];
         arr[i] = arr[minindex];
         arr[minindex] = temp;
