@@ -13,13 +13,13 @@ public class InsertionSort{
             key = arr[i];
             int j = i-1;
             if(arr[j]>key)
-                while(arr[i]<arr[i-1]&&j>=0){
+                while(arr[i]<arr[j]&&j>=0){
                    arr[j+1] = arr[j];
                    j--;
              }
              arr[j+1] = key;       
         }
-        System.out.println("Sorted array using Selection sort: ");
+        System.out.println("Sorted array using Insertion sort: ");
         for(i=0;i<n;i++)
             System.out.print(arr[i]+" ");
     }
