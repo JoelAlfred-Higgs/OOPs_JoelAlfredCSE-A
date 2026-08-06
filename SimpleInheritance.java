@@ -19,6 +19,9 @@ public class SimpleInheritance{
     public static void main(String[] args){
        Child prop = new Child();
        prop.house();
+       prop.car();
+       prop.study();
+       prop.play();
     
     }
 }
