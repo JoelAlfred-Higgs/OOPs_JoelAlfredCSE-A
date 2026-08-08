@@ -49,7 +49,7 @@ class LifeStyle extends Person{
 }
 class Predictor extends LifeStyle{
     double BMI;
-    int score = 50;
+    int score = 50,estimated_age,remaining_years;
     public void scoreCalculator() {
     double heightMeter = height / 100.0;
     BMI = weight / (heightMeter * heightMeter);
@@ -96,17 +96,20 @@ class Predictor extends LifeStyle{
     System.out.println("\n========== RESULT ==========");
     System.out.println("Name: " + name);
     System.out.println("Age: "+age);
-    System.out.printf("BMI : %.2f%n", BMI);
-    System.out.println("Health Score : " + score + "/100");
 if(score >= 90)
-    System.out.println("Excellent Lifestyle!");
+    estimated_age = 80;
 else if(score >= 75)
-    System.out.println("Good Lifestyle.");
+    estimated_age =  75;  
 else if(score >= 60)
-    System.out.println("Average Lifestyle.");
+    estimated_age = 65;
 else if(score >= 40)
-    System.out.println("Poor Lifestyle.");
+    estimated_age = 60;
 else
-    System.out.println("Very High Health Risk.");
-}
+    estimated_age = 50;
+
+remaining_years = estimated_age - age;
+System.out.print("You\'re current age is 19 and You got "+remaining_years+" years to live!!");
+
+    }
+
 }
