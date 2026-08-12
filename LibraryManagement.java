@@ -10,40 +10,55 @@ class Books{
     this.author = author;
     this.count = count;
    }
-   void DisplayBooks(){
+   void DisplayBooks(Books Book[]){
+    for(int i=0;i<Book.length;i++){
       System.out.println("==========Books==========");
-      System.out.println("Book Name:   "+book_name);
-      System.out.println("Book ID  :   "+book_id);
-      System.out.println("Author   :   "+author);
-      System.out.println("Count    :   "+count);
+      System.out.println("Book Name:   "+Book[i].book_name);
+      System.out.println("Book ID  :   "+Book[i].book_id);
+      System.out.println("Author   :   "+Book[i].author);
+      System.out.println("Count    :   "+Book[i].count);
+      System.out.println();
+   }
    }
 }
 class BorrowReturn extends Books{
 
     String bookid;
     Scanner obj = new Scanner(System.in);
-    void borrow(){
+    void borrow(Books book[]){
+     boolean found = false;
      System.out.println("Enter bookId to be borrowed: ");
-     book_id = obj.nextLine();
+     bookid = obj.nextLine();
      for(int i = 0 ;i < 10;i++){
-        if(bookid.equals(book_id)){
-            count--;
-            System.out.println("Book Borrowed Succcessfully!");
-            break; 
+        if(book[i].book_id.equals(bookid)){
+            if(book[i].count > 0){
+               count--;
+               found = true;
+               System.out.println("Book Borrowed Succcessfully!");
+               break; } 
+            else
+                System.out.print("Book not avaiable!");
         }
-        else
+        if(!found)
             System.out.print("Book not found!");
+        
      } }
-     void Return(){
+     void Return(Books book[]){
      System.out.println("Enter bookId to be returned: ");
-     book_id = obj.nextLine();
+     bookid = obj.nextLine();
+     boolean found = false;
      for(int i = 0 ;i < 10;i++){
-        if(bookid == book_id){
+        if(book[i].book_id == bookid){
             count++;
+            found = true;
             System.out.println("Book Returned Succcessfully!");
             break; 
         }
-     } }
+     } 
+     if(!found)
+        System.out.print("Book not found!");
+
+    }
 
     }
     
@@ -56,7 +71,11 @@ class Librarian extends Books{
         name = obj.nextLine();
         user[i++] = name;
         System.out.print("User Name:  "+name);
-        System.out.print
+        System.out.print("Book Name: "+
+    }
+    void AddBook()
+    {
+
     }
 
 }
@@ -66,14 +85,15 @@ class TransactionLog{
 
 public class LibraryManagement{
     public static void main(String[] args) {
-        int pos;
+        int pos,count;
+        String book_name,book_id,author;
         Scanner obj = new Scanner(System.in);
-        Books[] book = new Books[5];
-        book[0] = Books("Harry potter","2314","Jk.Rowling",10);
-        book[1] = Books("Wimpy Kid","3272","Jeff Kinney",7);
-        book[2] = Books("The Shining","7281","Stephen king",2);
-        book[3] = Books("Spider-Man","5821","Stan-Lee",5);
-        book[4] = Books("The lord of rings","2783","Tokins",8);
+        Books[] book = new Books[10];
+        book[0] = new Books("Harry potter","2314","Jk.Rowling",10);
+        book[1] = new Books("Wimpy Kid","3272","Jeff Kinney",7);
+        book[2] = new Books("The Shining","7281","Stephen king",2);
+        book[3] = new Books("Spider-Man","5821","Stan-Lee",5);
+        book[4] = new Books("The lord of rings","2783","Tokins",8);
         System.out.print("1-Librarian || 2-Public");
         pos = obj.nextInt();
         switch(pos){
@@ -81,12 +101,50 @@ public class LibraryManagement{
                 Librarian lib = new Librarian();
                 System.out.print("1-BooksList,2-Users,3-Addbooks,4-Removebooks: ");
                 int ch = obj.nextInt();
-                if(ch==1){
-                    lib.DisplayBooks();
+                switch(ch){
+                    case 1:
+                        lib.DisplayBooks(book[]);
+                        break;
+                    case 2:
+                        int id;
+                        System.out.print("Enter User ID: ");
+                        id = obj.nextInt();
+                        lib.userDetail(id);
+                        break;
+                    case 3:
+                        System.out.print("Enter book name,id,author: ");
+                        book_id = obj.nextInt();
+                        book_name = obj.nextLine();
+                        author = obj.nextLine();
+                        
+                    case 4:
+
+            
+            case 2:
+                BorrowReturn obj = new BorrowReturn();
+                System.out.print("1-Bookslist,2-BorrowBook,3-ReturnBook: ");
+                int ch = obj.nextInt();
+                switch(ch){
+                    case 1:
+                        obj.DisplayBooks(book[]);
+                        break;
+                    case 2:
+                        obj.borrow(book[]);
+                        break;
+                    case 3:
+                        obj.Return(book[]);
+                        break;
+                    default:
+                        System.out.print("Try Again!");
                 }
-                else if(ch==2){
+
+
                     
+
                 }
+                
+
+
 
         }
         
