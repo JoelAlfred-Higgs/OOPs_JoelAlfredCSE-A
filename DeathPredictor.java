@@ -5,6 +5,7 @@ public class DeathPredictor{
          obj.getUserDetails();
          obj.lifestyle_details();
          obj.scoreCalculator();
+         obj.message_user();
     }
 }
 class Person{
@@ -53,33 +54,33 @@ class Predictor extends LifeStyle{
     public void scoreCalculator() {
     double heightMeter = height / 100.0;
     BMI = weight / (heightMeter * heightMeter);
-    if(BMI >= 18.5 && BMI <= 24.9)
+    if(BMI >= 18.5 && BMI <= 24.9) // calculates BMI
         score += 10;
     else
         score -= 10;
-    if(smoker.equalsIgnoreCase("yes"))
+    if(smoker.equalsIgnoreCase("yes"))//checks if user smokes
         score -= 20;
-    if(alcohol.equalsIgnoreCase("yes"))
+    if(alcohol.equalsIgnoreCase("yes"))// checks if user consumes alcohol
         score -= 10;
-    if(sleep_hours >= 7 && sleep_hours <= 8)
+    if(sleep_hours >= 7 && sleep_hours <= 8) // average sleeping hrs 
         score += 10;
     else if(sleep_hours >= 5)
         score -= 5;
     else
         score -= 10;
-    if(exercise >= 1)
+    if(exercise >= 1)// hrs of exercise
         score += 10;
     else if(exercise > 0)
         score += 5;
     else
         score -= 10;
-    if(fastfood_freq <= 4)
+    if(fastfood_freq <= 4) // how many times does user consumes juck food in a week
         score += 5;
     else if(fastfood_freq <= 8)
         score -= 5;
     else
         score -= 10;
-    switch(stress_level) {
+    switch(stress_level) {// score is updated based on stress level
         case 1:
             score += 10;
             break;
@@ -89,27 +90,37 @@ class Predictor extends LifeStyle{
             score -= 15;
             break;
     }
-    if(score > 100)
+    if(score > 100)// if user gets a score above 100, the score is set to 100
         score = 100;
     if(score < 0)
-        score = 0;
+        score = 0; }
+
+void message_user(){
     System.out.println("\n========== RESULT ==========");
     System.out.println("Name: " + name);
-    System.out.println("Age: "+age);
-if(score >= 90)
-    estimated_age = 80;
-else if(score >= 75)
-    estimated_age =  75;  
-else if(score >= 60)
-    estimated_age = 65;
-else if(score >= 40)
-    estimated_age = 60;
-else
-    estimated_age = 50;
+    System.out.println("Age: " + age);
+    System.out.println("Health Score: " + score + "/100");
 
-remaining_years = estimated_age - age;
-System.out.print("You\'re current age is 19 and You got "+remaining_years+" years to live!!");
-
+    if(score >= 90) {
+        remaining_years = 85 - age;
+        System.out.print("You got " + remaining_years +" years. Well thats a long period of time make sure you cherish every moment!!!");
     }
-
+    else if(score >= 75) {
+        remaining_years = 80 - age;
+        System.out.print("You got " + remaining_years +" years. Thats a good amount of life so live happily and peacefully!!!");
+    }
+    else if(score >= 60) {
+        remaining_years = 75 - age;
+        System.out.print("You got " + remaining_years +" years. Not bad but still you can grind and increase your health!!!");
+    }
+    else if(score >= 40) {
+        remaining_years = 70 - age;
+        System.out.print("You got " + remaining_years +" years. Thats still a lot of time, but you can definitely improve your lifestyle!!!");
+    }
+    else {
+        remaining_years = 60 - age;
+        System.out.print("You got " + remaining_years +" years, You got to clutch on pal or else the reaper will take you its home!!!");
+    }
 }
+}
+    
