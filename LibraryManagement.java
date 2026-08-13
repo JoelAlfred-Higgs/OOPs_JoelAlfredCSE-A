@@ -29,10 +29,10 @@ class BorrowReturn extends Books{
      boolean found = false;
      System.out.println("Enter bookId to be borrowed: ");
      bookid = obj.nextLine();
-     for(int i = 0 ;i < 10;i++){
+     for(int i = 0 ;i < book.length;i++){
         if(book[i].book_id.equals(bookid)){
             if(book[i].count > 0){
-               count--;
+               book[i].count--;
                found = true;
                System.out.println("Book Borrowed Succcessfully!");
                break; } 
@@ -47,9 +47,9 @@ class BorrowReturn extends Books{
      System.out.println("Enter bookId to be returned: ");
      bookid = obj.nextLine();
      boolean found = false;
-     for(int i = 0 ;i < 10;i++){
+     for(int i = 0 ;i < book.length;i++){
         if(book[i].book_id == bookid){
-            count++;
+            book[i].count++;
             found = true;
             System.out.println("Book Returned Succcessfully!");
             break; 
@@ -64,21 +64,55 @@ class BorrowReturn extends Books{
     
 class Librarian extends Books{
     String user[] = new String[10],name; 
-    Scanner obj = new Scanner(System.in);
     int i = 0;
-    void userDetails(){
-        System.out.print("=======User Details=======");
+        void userDetails() {
+        System.out.print("=======User Details=======\n");
+        System.out.print("Enter User Name: ");
         name = obj.nextLine();
-        user[i++] = name;
-        System.out.print("User Name:  "+name);
-        System.out.print("Book Name: "+
+
+        if (i < user.length) {
+            user[i++] = name;
+            System.out.println("User Name: " + name);
+        } else {
+            System.out.println("User limit reached!");
+        }
     }
     void AddBook()
     {
-
+        System.out.print("Enter book name: ");
+        String book_name = obj.nextLine();
+        System.out.print("Enter book id: ");
+        String book_id = obj.nextLine();
+        System.out.print("Enter author: ");
+        String author = obj.nextLine();
+        System.out.print("Enter count: ");
+        int count = obj.nextInt();
+        for (int i = 0; i < book.length; i++) {
+            if (book[i] == null) {
+                book[i] = new Books(book_name, book_id, author, count);
+                System.out.println("Book Added Successfully!");
+                return;
+            }
+        }
+        System.out.println("Book storage is full!");
     }
+    void RemoveBook(Books[] book) {
+        System.out.print("Enter book id to remove: ");
+        String id = obj.nextLine();
+        for (int i = 0; i < book.length; i++) {
+            if (book[i].book_id.equals(id)) {
+                book[i] = null;
+                System.out.println("Book Removed Successfully!");
+                return;
+            }
+        }
 
+        System.out.println("Book not found!");
+    }
 }
+    
+
+
 class TransactionLog{
 
 }
@@ -103,21 +137,21 @@ public class LibraryManagement{
                 int ch = obj.nextInt();
                 switch(ch){
                     case 1:
-                        lib.DisplayBooks(book[]);
+                        lib.DisplayBooks(book);
                         break;
                     case 2:
-                        int id;
-                        System.out.print("Enter User ID: ");
-                        id = obj.nextInt();
-                        lib.userDetail(id);
+                        lib.userDetail();
                         break;
                     case 3:
-                        System.out.print("Enter book name,id,author: ");
-                        book_id = obj.nextInt();
-                        book_name = obj.nextLine();
-                        author = obj.nextLine();
-                        
+                        lib.AddBook(book);
+                        break;
                     case 4:
+                        lib.RemoveBook(book);
+                        break;
+                    default:
+                        System.out.print("Try Again!");
+                }
+                break;
 
             
             case 2:
@@ -126,28 +160,21 @@ public class LibraryManagement{
                 int ch = obj.nextInt();
                 switch(ch){
                     case 1:
-                        obj.DisplayBooks(book[]);
+                        obj.DisplayBooks(book);
                         break;
                     case 2:
-                        obj.borrow(book[]);
+                        obj.borrow(book);
                         break;
                     case 3:
-                        obj.Return(book[]);
+                        obj.Return(book);
                         break;
                     default:
                         System.out.print("Try Again!");
+                break;
                 }
-
-
-                    
+            default:
+                    System.out.print("System Crashed Try again!");
 
                 }
-                
-
-
-
-        }
-        
-
+            }
     }
-}
