@@ -18,6 +18,7 @@ public class ArithmeticExceptionPgm{
             System.out.println("Error message: Invalid input, input must be integer!");
         }
         finally{
+            System.out.print("Program ended!");
            obj.close();
         }
         
