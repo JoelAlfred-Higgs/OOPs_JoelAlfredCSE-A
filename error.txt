@@ -1,0 +1,933 @@
+  symbol:   variable key
+  location: class SelectionSort
+9 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac SelectionSort.java
+SelectionSort.java:14: error: cannot find symbol
+            j = i-1;
+            ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:15: error: cannot find symbol
+            if(arr[j]>key)
+                   ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:16: error: cannot find symbol
+                while(arr[i]<arr[i-1]&&j>=0){
+                                       ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:17: error: cannot find symbol
+                   arr[j+1] = arr[j];
+                       ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:17: error: cannot find symbol
+                   arr[j+1] = arr[j];
+                                  ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:18: error: cannot find symbol
+                   j--;
+                   ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:20: error: cannot find symbol
+             arr[j+1] = key;       
+                 ^
+  symbol:   variable j
+  location: class SelectionSort
+7 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac SelectionSort.java
+SelectionSort.java:14: error: cannot find symbol
+            j = i-1;
+            ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:15: error: cannot find symbol
+            if(arr[j]>key)
+                   ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:16: error: cannot find symbol
+                while(arr[i]<arr[i-1]&&j>=0){
+                                       ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:17: error: cannot find symbol
+                   arr[j+1] = arr[j];
+                       ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:17: error: cannot find symbol
+                   arr[j+1] = arr[j];
+                                  ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:18: error: cannot find symbol
+                   j--;
+                   ^
+  symbol:   variable j
+  location: class SelectionSort
+SelectionSort.java:20: error: cannot find symbol
+             arr[j+1] = key;       
+                 ^
+  symbol:   variable j
+  location: class SelectionSort
+7 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac SelectionSort.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java SelectionSort 
+Enter no of elements: 5
+Enter array elements: 1 7 3 4 9 
+Sorted array using Selection sort: 
+1 3 4 7 9 
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git add "SelectionSort.java"
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git commit -m "Initial commit"
+[main 881d52e] Initial commit
+ 1 file changed, 27 insertions(+)
+ create mode 100644 SelectionSort.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.17 KiB | 597.00 KiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/JoelAlfred-Higgs/OOPs_JoelAlfredCSE-A
+   942fdbf..881d52e  main -> main
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> 
+ *  History restored 
+
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git add "InsertionSort.java"
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git commit -m "Changed class name to InsertionSort"
+[main b7c0c06] Changed class name to InsertionSort
+ 1 file changed, 27 insertions(+)
+ create mode 100644 InsertionSort.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 631 bytes | 631.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JoelAlfred-Higgs/OOPs_JoelAlfredCSE-A
+   881d52e..b7c0c06  main -> main
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:7: error: ';' expected
+    static double hra,da
+                        ^
+PaySlip.java:42: error: illegal start of type
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay);
+                                           ^
+PaySlip.java:42: error: <identifier> expected
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay);
+                                                                   ^
+PaySlip.java:42: error: ';' expected
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay);
+                                                                               ^
+PaySlip.java:43: error: illegal start of type
+    super(empname,empid,loan,BasicPay);
+    ^
+PaySlip.java:43: error: <identifier> expected
+    super(empname,empid,loan,BasicPay);
+                 ^
+PaySlip.java:43: error: ';' expected
+    super(empname,empid,loan,BasicPay);
+                                     ^
+7 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:7: error: ';' expected
+    static double hra,da
+                        ^
+PaySlip.java:42: error: illegal start of type
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay){
+                                           ^
+PaySlip.java:42: error: <identifier> expected
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay){
+                                                                   ^
+PaySlip.java:42: error: ';' expected
+    Programmer(String empname,String empid,"Professor",double loan,int BasicPay){
+                                                                               ^
+4 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:7: error: ';' expected
+    static double hra,da
+                        ^
+1 error
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:28: error: cannot find symbol
+    System.out.println(" Basic Pay       : "+ basicPay);
+                                              ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:32: error: cannot find symbol
+    System.out.println(" Gross Pay          :  "+ grossPay);
+                                                  ^
+  symbol:   variable grossPay
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+PaySlip.java:35: error: cannot find symbol
+    System.out.println(" Net Pay            :"+ netPay);
+                                                ^
+  symbol:   variable netPay
+  location: class Employee
+PaySlip.java:48: error: constructor Programmer in class Programmer cannot be applied to given types;
+        Programmer emp = new Programmer("Higgs Monaghan","5821",10000,50000);
+                         ^
+  required: String,String,String,double,int
+  found:    String,String,int,int
+  reason: actual and formal argument lists differ in length
+10 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:28: error: cannot find symbol
+    System.out.println(" Basic Pay       : "+ basicPay);
+                                              ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:32: error: cannot find symbol
+    System.out.println(" Gross Pay          :  "+ grossPay);
+                                                  ^
+  symbol:   variable grossPay
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+PaySlip.java:35: error: cannot find symbol
+    System.out.println(" Net Pay            :"+ netPay);
+                                                ^
+  symbol:   variable netPay
+  location: class Employee
+PaySlip.java:48: error: cannot find symbol
+        Programmer emp = new Programmer("Higgs Monaghan","5821",designation,10000,50000);
+                                                                ^
+  symbol:   variable designation
+  location: class PaySlip
+10 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:28: error: cannot find symbol
+    System.out.println(" Basic Pay       : "+ basicPay);
+                                              ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:32: error: cannot find symbol
+    System.out.println(" Gross Pay          :  "+ grossPay);
+                                                  ^
+  symbol:   variable grossPay
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+PaySlip.java:35: error: cannot find symbol
+    System.out.println(" Net Pay            :"+ netPay);
+                                                ^
+  symbol:   variable netPay
+  location: class Employee
+PaySlip.java:48: error: constructor Programmer in class Programmer cannot be applied to given types;
+        Programmer emp = new Programmer("Higgs Monaghan","5821",50000,10000);
+                         ^
+  required: String,String,String,double,int
+  found:    String,String,int,int
+  reason: actual and formal argument lists differ in length
+10 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:28: error: cannot find symbol
+    System.out.println(" Basic Pay       : "+ basicPay);
+                                              ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:32: error: cannot find symbol
+    System.out.println(" Gross Pay          :  "+ grossPay);
+                                                  ^
+  symbol:   variable grossPay
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+PaySlip.java:35: error: cannot find symbol
+    System.out.println(" Net Pay            :"+ netPay);
+                                                ^
+  symbol:   variable netPay
+  location: class Employee
+9 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:28: error: cannot find symbol
+    System.out.println(" Basic Pay       : "+ basicPay);
+                                              ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:32: error: cannot find symbol
+    System.out.println(" Gross Pay          :  "+ Gross_Pay);
+                                                  ^
+  symbol:   variable Gross_Pay
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+PaySlip.java:35: error: cannot find symbol
+    System.out.println(" Net Pay            :"+ net_Pay);
+                                                ^
+  symbol:   variable net_Pay
+  location: class Employee
+9 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:14: error: cannot find symbol
+        this.loan = loan;
+            ^
+  symbol: variable loan
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+PaySlip.java:33: error: cannot find symbol
+    System.out.println(" Loan Deduction     :"+ loan);
+                                                ^
+  symbol:   variable loan
+  location: class Employee
+6 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+PaySlip.java:24: error: cannot find symbol
+    System.out.println(" Employee Name   : " + name);
+                                               ^
+  symbol:   variable name
+  location: class Employee
+PaySlip.java:25: error: cannot find symbol
+    System.out.println(" Employee ID     : " + empId);
+                                               ^
+  symbol:   variable empId
+  location: class Employee
+4 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (basicPay+hra+da);
+                          ^
+  symbol:   variable basicPay
+  location: class Employee
+2 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:15: error: cannot find symbol
+        this.Basicpay = BasicPay;
+            ^
+  symbol: variable Basicpay
+1 error
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : Higgs Monaghan
+ Employee ID     : 5821
+ Designation     : Programmer
+--------------------------------------------------
+ Basic Pay       : 0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :50000.0
+--------------------------------------------------
+ Net Pay            :-50000.0
+==================================================
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:79: error: variable emp is already defined in method main(String[])
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                               ^
+PaySlip.java:79: error: cannot find symbol
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:83: error: variable emp is already defined in method main(String[])
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:83: error: cannot find symbol
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:87: error: variable emp is already defined in method main(String[])
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:87: error: cannot find symbol
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:91: error: variable emp is already defined in method main(String[])
+                    Professor emp = new Professor(name,id,basic,loan);
+                              ^
+PaySlip.java:91: error: cannot find symbol
+                    Professor emp = new Professor(name,id,basic,loan);
+                                                  ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:98: error: cannot find symbol
+            char ch = emp.next.charAt(0);
+                         ^
+  symbol:   variable next
+  location: variable emp of type Scanner
+PaySlip.java:100: error: cannot find symbol
+     }while(ch=='Y'||ch=='y');
+            ^
+  symbol:   variable ch
+  location: class PaySlip
+PaySlip.java:100: error: cannot find symbol
+     }while(ch=='Y'||ch=='y');
+                     ^
+  symbol:   variable ch
+  location: class PaySlip
+PaySlip.java:101: error: cannot find symbol
+     emp.close();
+     ^
+  symbol:   variable emp
+  location: class PaySlip
+12 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:79: error: variable emp is already defined in method main(String[])
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                               ^
+PaySlip.java:79: error: cannot find symbol
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:83: error: variable emp is already defined in method main(String[])
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:83: error: cannot find symbol
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:87: error: variable emp is already defined in method main(String[])
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:87: error: cannot find symbol
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:91: error: variable emp is already defined in method main(String[])
+                    Professor emp = new Professor(name,id,basic,loan);
+                              ^
+PaySlip.java:91: error: cannot find symbol
+                    Professor emp = new Professor(name,id,basic,loan);
+                                                  ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:98: error: cannot find symbol
+            char ch = emp.next.charAt(0);
+                         ^
+  symbol:   variable next
+  location: variable emp of type Scanner
+PaySlip.java:100: error: cannot find symbol
+     }while(ch=='Y'||ch=='y');
+            ^
+  symbol:   variable ch
+  location: class PaySlip
+PaySlip.java:100: error: cannot find symbol
+     }while(ch=='Y'||ch=='y');
+                     ^
+  symbol:   variable ch
+  location: class PaySlip
+11 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:80: error: variable emp is already defined in method main(String[])
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                               ^
+PaySlip.java:80: error: cannot find symbol
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:84: error: variable emp is already defined in method main(String[])
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:84: error: cannot find symbol
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:88: error: variable emp is already defined in method main(String[])
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:88: error: cannot find symbol
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:92: error: variable emp is already defined in method main(String[])
+                    Professor emp = new Professor(name,id,basic,loan);
+                              ^
+PaySlip.java:92: error: cannot find symbol
+                    Professor emp = new Professor(name,id,basic,loan);
+                                                  ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:99: error: cannot find symbol
+            ch = emp.next.charAt(0);
+                    ^
+  symbol:   variable next
+  location: variable emp of type Scanner
+9 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:80: error: cannot find symbol
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:84: error: variable emp is already defined in method main(String[])
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:84: error: cannot find symbol
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:88: error: variable emp is already defined in method main(String[])
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:88: error: cannot find symbol
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:92: error: variable emp is already defined in method main(String[])
+                    Professor emp = new Professor(name,id,basic,loan);
+                              ^
+PaySlip.java:92: error: cannot find symbol
+                    Professor emp = new Professor(name,id,basic,loan);
+                                                  ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:99: error: cannot find symbol
+            ch = obj.next.charAt(0);
+                    ^
+  symbol:   variable next
+  location: variable obj of type Scanner
+PaySlip.java:102: error: cannot find symbol
+     emp.close();
+     ^
+  symbol:   variable emp
+  location: class PaySlip
+9 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:80: error: cannot find symbol
+                    Programmer emp = new Programmer(name,id,basic,loan);
+                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:84: error: variable emp is already defined in method main(String[])
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:84: error: cannot find symbol
+                    AssistantProfessor emp = new AssistantProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:88: error: variable emp is already defined in method main(String[])
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                       ^
+PaySlip.java:88: error: cannot find symbol
+                    AssociateProfessor emp = new AssociateProfessor(name,id,basic,loan);
+                                                                    ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:92: error: variable emp is already defined in method main(String[])
+                    Professor emp = new Professor(name,id,basic,loan);
+                              ^
+PaySlip.java:92: error: cannot find symbol
+                    Professor emp = new Professor(name,id,basic,loan);
+                                                  ^
+  symbol:   variable name
+  location: class PaySlip
+PaySlip.java:99: error: cannot find symbol
+            ch = obj.next.charAt(0);
+                    ^
+  symbol:   variable next
+  location: variable obj of type Scanner
+8 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:70: error: cannot find symbol
+            Name = obj.nextLine();
+            ^
+  symbol:   variable Name
+  location: class PaySlip
+PaySlip.java:81: error: incompatible types: possible lossy conversion from double to int
+                    Programmer prog = new Programmer(name,id,loan,basic);
+                                                                  ^
+PaySlip.java:85: error: incompatible types: possible lossy conversion from double to int
+                    AssistantProfessor assist= new AssistantProfessor(name,id,loan,basic);
+                                                                                   ^
+PaySlip.java:89: error: incompatible types: possible lossy conversion from double to int
+                    AssociateProfessor asso= new AssociateProfessor(name,id,loan,basic);
+                                                                                 ^
+PaySlip.java:93: error: incompatible types: possible lossy conversion from double to int
+                    Professor prof = new Professor(name,id,loan,basic);
+                                                                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+5 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:70: error: cannot find symbol
+            Name = obj.nextLine();
+            ^
+  symbol:   variable Name
+  location: class PaySlip
+PaySlip.java:74: error: incompatible types: possible lossy conversion from double to int
+            basic = obj.nextDouble();
+                                  ^
+2 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip.java
+Employee Name: Higgs Monaghan
+Employee ID: 5821
+Enter BasicPay and Loan(If availed): 100000 10000
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+1
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : Higgs Monaghan
+ Employee ID     : 5821
+ Designation     : Programmer
+--------------------------------------------------
+ Basic Pay       : 0.0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :10000.0
+--------------------------------------------------
+ Net Pay            :-10000.0
+==================================================
+Generate PaySlip(y/n): n
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PaySlip.java:12: error: cannot find symbol
+        this.hra = BasicPay*hra_rate;
+            ^
+  symbol: variable hra
+PaySlip.java:13: error: cannot find symbol
+        this.da = BasicPay*da_rate;
+            ^
+  symbol: variable da
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (BasicPay+hra+da);
+                                   ^
+  symbol:   variable hra
+  location: class Employee
+PaySlip.java:16: error: cannot find symbol
+        this.Gross_pay = (BasicPay+hra+da);
+                                       ^
+  symbol:   variable da
+  location: class Employee
+PaySlip.java:29: error: cannot find symbol
+    System.out.println(" House Rent Allowance(HRA)        :"+ hra);
+                                                              ^
+  symbol:   variable hra
+  location: class Employee
+PaySlip.java:30: error: cannot find symbol
+    System.out.println(" Dearness Allowance (DA)          :"+ da);
+                                                              ^
+  symbol:   variable da
+  location: class Employee
+6 errors
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip      
+Employee Name: Higgs Monaghan
+Employee ID: 5821
+Enter BasicPay and Loan(If availed): 5000000 10000
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+1
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : Higgs Monaghan
+ Employee ID     : 5821
+ Designation     : Programmer
+--------------------------------------------------
+ Basic Pay       : 0.0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :10000.0
+--------------------------------------------------
+ Net Pay            :-10000.0
+==================================================
+Generate PaySlip(y/n): n
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip      
+Employee Name: Higgs monaghan
+Employee ID: 5821
+Enter BasicPay and Loan(If availed): 5000000 10000
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+1
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : Higgs monaghan
+ Employee ID     : 5821
+ Designation     : Programmer
+--------------------------------------------------
+ Basic Pay       : 0.0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :10000.0
+--------------------------------------------------
+ Net Pay            :-10000.0
+==================================================
+Generate PaySlip(y/n): b
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip      
+Employee Name: doom
+Employee ID: 2024
+Enter BasicPay and Loan(If availed): 500000 10000
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+4
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : doom
+ Employee ID     : 2024
+ Designation     : Professor
+--------------------------------------------------
+ Basic Pay       : 0.0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :10000.0
+--------------------------------------------------
+ Net Pay            :-10000.0
+==================================================
+Generate PaySlip(y/n): f
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip      
+Employee Name: higgs
+Employee ID: 5821
+Enter BasicPay and Loan(If availed): 50000 10000 
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+2
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : higgs
+ Employee ID     : 5821
+ Designation     : Assistant Professor
+--------------------------------------------------
+ Basic Pay       : 0
+ House Rent Allowance(HRA)        :0.0
+ Dearness Allowance (DA)          :0.0
+--------------------------------------------------
+ Gross Pay          :  0.0
+ Loan Deduction     :10000.0
+--------------------------------------------------
+ Net Pay            :-10000.0
+==================================================
+Generate PaySlip(y/n): d
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> javac PaySlip.java
+PS C:\Users\joela\OneDrive\Documents\OOPs_JoelAlfredCSE-A> java PaySlip      
+Employee Name: Higgs
+Employee ID: 5821
+Enter BasicPay and Loan(If availed): 50000 1000
+Enter Designation No: 
+1.Programmer
+2.Assistant professor
+3.Associate Professor
+4.Professor
+2
+==================================================
+                  PAYSLIP
+==================================================
+ Employee Name   : Higgs
+ Employee ID     : 5821
+ Designation     : Assistant Professor
+--------------------------------------------------
+ Basic Pay       : 50000
+ House Rent Allowance(HRA)        :7500.0
+ Dearness Allowance (DA)          :4000.0
+--------------------------------------------------
+ Gross Pay          :  61500.0
+ Loan Deduction     :1000.0
+--------------------------------------------------
+ Net Pay            :60500.0
+==================================================
+Generate PaySlip(y/n): n
